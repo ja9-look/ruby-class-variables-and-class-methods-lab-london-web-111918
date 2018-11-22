@@ -49,5 +49,5 @@ class Song
     end
     }
   end
-  
+  @@hash_of_artists
 end
