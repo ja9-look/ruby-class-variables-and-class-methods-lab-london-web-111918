@@ -34,6 +34,7 @@ class Song
     else
     @@hash_of_genres[genre] = 1
   end
+    @@hash_of_genres
   end
   
 end
