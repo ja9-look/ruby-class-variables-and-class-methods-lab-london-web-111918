@@ -30,11 +30,11 @@ class Song
   
   def self.genre_count
     @@genre.each {|genre| 
-    if @@hash_of_genres.has_key?(@genre)
+    if @@hash_of_genres.has_key?(genre)
     @@hash_of_genres[genre] += 1
     else
     @@hash_of_genres[genre] = 1
-  end
+    end
     }
     @@hash_of_genres
   end
