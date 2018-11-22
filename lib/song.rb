@@ -29,7 +29,7 @@ class Song
   end
   
   def self.genre_count
-    if @@hash_of_genres.has_key?(genre)
+    if @@hash_of_genres.has_key?(@genre)
     @@hash_of_genres[genre] += 1  
     else
     @@hash_of_genres[genre] = 1
