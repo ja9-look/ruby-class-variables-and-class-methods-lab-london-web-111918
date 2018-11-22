@@ -28,11 +28,11 @@ class Song
     @@genres.uniq!
   end
   
-  def self.genre_count
+  def genre_count
     if @@hash_of_genres.has_key?(@genre)
-    @@hash_of_genres[genre] += 1  
+    @@hash_of_genres[@genre] += 1  
     else
-    @@hash_of_genres[genre] = 1
+    @@hash_of_genres[@genre] = 1
   end
     @@hash_of_genres
   end
