@@ -30,6 +30,7 @@ class Song
   
   def genre_count
     
+    hash["key"] = "value"
   end
   
 end
