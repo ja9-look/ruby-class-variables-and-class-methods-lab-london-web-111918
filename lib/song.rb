@@ -6,6 +6,7 @@ class Song
   @@artists = []
   @@genres = []
   @@hash_of_genres = {}
+  @@hash_of_artists = {}
   
   def initialize(name, artist, genre)
     @name = name
@@ -37,6 +38,16 @@ class Song
     end
     }
     @@hash_of_genres
+  end
+  
+  def self.artist_count
+    @@artists.each |artist|
+    if @@hash_of_artists.has_key?(artist)
+    @@hash_of_artists[artist] += 1 
+    else
+    @@hash_of_artists[artist] = 1
+    end
+    }
   end
   
 end
