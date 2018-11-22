@@ -48,6 +48,7 @@ class Song
     @@hash_of_artists[artist] = 1
     end
     }
+    @@hash_of_artists
   end
-  @@hash_of_artists
+  
 end
