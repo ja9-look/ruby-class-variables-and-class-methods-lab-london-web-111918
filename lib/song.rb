@@ -29,8 +29,11 @@ class Song
   end
   
   def genre_count
-    
-    hash["key"] = "value"
+    if @@hash_of_genres.has_key?(genre)
+    @@hash_of_genres[genre] += 1  
+    else
+    @@hash_of_genres[genre] = 1
+  end
   end
   
 end
