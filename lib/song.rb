@@ -28,7 +28,7 @@ class Song
     @@genres.uniq!
   end
   
-  def genre_count
+  def self.genre_count
     if @@hash_of_genres.has_key?(genre)
     @@hash_of_genres[genre] += 1  
     else
